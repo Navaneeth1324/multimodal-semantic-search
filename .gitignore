@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches & Environment
+.venv/
+env/
+venv/
+ENV/
+.env
+
+# Model weights & Checkpoints (downloaded locally)
+models/*.onnx
+models/*.pt
+models/*.bin
+*.pth
+
+# Vector DB local storage
+qdrant_storage/
+.chroma/
+
+# Data caches (raw downloads if heavy)
+data/cache/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/
