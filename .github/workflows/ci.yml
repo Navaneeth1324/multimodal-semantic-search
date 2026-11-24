@@ -29,6 +29,10 @@ jobs:
         run: |
           python -m src.ingestion.load_data
 
+      - name: Build vector index
+        run: |
+          python -m src.indexing.index_catalog
+
       - name: Run test suite
         run: |
           pytest tests/ -v
